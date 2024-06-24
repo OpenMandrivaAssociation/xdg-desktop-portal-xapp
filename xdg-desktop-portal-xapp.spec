@@ -9,6 +9,7 @@ Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
  
 BuildRequires:  desktop-file-utils
 BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  meson
 BuildRequires:  pkgconfig(xdg-desktop-portal)
  
