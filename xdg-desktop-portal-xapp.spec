@@ -48,4 +48,5 @@ outside the sandbox in the MATE, XFCE and Cinnamon environments.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.impl.portal.desktop.xapp.service
 %{_datadir}/xdg-desktop-portal/portals/xapp.portal
+%{_datadir}/xdg-desktop-portal/portals/xapp-gnome-keyring.portal
 %{_userunitdir}/xdg-desktop-portal-xapp.service
