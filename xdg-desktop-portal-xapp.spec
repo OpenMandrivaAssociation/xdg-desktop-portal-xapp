@@ -1,5 +1,5 @@
 Name:           xdg-desktop-portal-xapp
-Version:        1.0.7
+Version:        1.1.0
 Release:        1
 Summary:        Backend implementation for xdg-desktop-portal using Xapp
 Group:          System/Libraries/Cinnamon
