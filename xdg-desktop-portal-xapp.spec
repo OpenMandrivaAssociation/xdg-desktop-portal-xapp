@@ -1,5 +1,5 @@
 Name:           xdg-desktop-portal-xapp
-Version:        1.1.3
+Version:        1.2.0
 Release:        1
 Summary:        Backend implementation for xdg-desktop-portal using Xapp
 Group:          System/Libraries/Cinnamon
@@ -10,12 +10,15 @@ Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  desktop-file-utils
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk+-3.0)
+
 BuildRequires:  meson
+BuildRequires:	pkgconfig(libsystemd)
 BuildRequires:  pkgconfig(xdg-desktop-portal)
  
 Requires:       dbus-x11
 Requires:       dbus-common
 Requires:       xapp
+Requires:	xapp-symbolic-icons
 Requires:       xdg-desktop-portal
 Requires:       xdg-desktop-portal-gtk
 Supplements:    cinnamon
