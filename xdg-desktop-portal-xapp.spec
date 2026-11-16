@@ -1,5 +1,5 @@
 Name:           xdg-desktop-portal-xapp
-Version:        1.2.0
+Version:        1.2.2
 Release:        1
 Summary:        Backend implementation for xdg-desktop-portal using Xapp
 Group:          System/Libraries/Cinnamon
@@ -38,13 +38,15 @@ outside the sandbox in the MATE, XFCE and Cinnamon environments.
 %install
 %meson_install
 
+%find_lang %{name}
+
 %post
 %systemd_user_post %{name}.service
  
 %preun
 %systemd_user_preun %{name}.service
  
-%files
+%files -f %{name}.lang
 %license COPYING
 %doc README.md
 %{_libexecdir}/%{name}
