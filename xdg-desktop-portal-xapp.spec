@@ -6,7 +6,8 @@ Group:          System/Libraries/Cinnamon
 License:        LGPL-2.1-or-later
 URL:            https://github.com/linuxmint/%{name}
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
- 
+
+BuildRequires:	gettext
 BuildRequires:  desktop-file-utils
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk+-3.0)
